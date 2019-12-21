@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', Verdana, sans-serif;
+}
+
+nav {
+    background: #28262C;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+label.logo i {
+    color: white;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #5F6062;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.banner-area {
+    background: url(bg3.jpg) no-repeat;
+    height: calc(100vh - 145px);
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.banner-area h1, .banner-area p {
+    color: 28262C;
+}
+
+.timeline-area, .activism-area, .contact-area, .about-me-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+}
+
+.about-me-area {
+    height: 500px;
+}
+
+.timeline-area {
+    min-height: 1000px;
+    height: 1730px;
+}
+
+.activism-area {
+    min-height: 1000px;
+    height: 1730px;
+}
+
+.text-part {
+    width: 65%;
+    height: 80%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about-me-style {
+    width: 75%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.profile-image-container {
+    margin-right: 35px;    
+}
+
+.profile-image-container img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.timeline-area, .contact-area {
+    background-color: #fefefe;
+}
+
+.activism-area, .about-me-area {
+    background-color: #262626;
+    color: #fff;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    width: 1000px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.timeline ul {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.content {
+    padding-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.timeline ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #28262C;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #5F6062;
+}
+
+.timeline ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #28262C;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #5F6062;
+}
+
+.timeline ul li h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #5F6062;
+}
+
+.timeline ul li p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.timeline ul li .time h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -250px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #5F6062;
+    color: #fff;
+    border-radius: 18px;  
+    box-shadow: 0 0 0 3px rgba(95, 96, 98, 0.3); 
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -260px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #5F6062;
+    color: #fff;
+    border-radius: 18px;  
+    box-shadow: 0 0 0 3px rgba(95, 96, 98, 0.3); 
+}
+
+.civic-initiative-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.civic-initiative-text {
+    width: 50%;
+}
+
+.civic-initiative-text h3 {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.civic-initiative-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.civic-initiative-image img {
+    max-width: 500px;
+    max-height: 500px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.civic-initiative-image label {
+    display: inline-block;
+}
+
+.civic-initiative-image label.youtube {
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.civic-initiative-image label.youtube i {
+    color: white;
+}
+
+.activism-area h2 {
+    padding-top: 10px;
+}
+
+.contact-area {
+    height: 250px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #5F6062;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #28262C;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+}
+
+@media (max-width: 952px){
+    .about-me-area {
+        height: 850px;
+    }
+
+    .about-me-style {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .timeline {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        text-align: center !important;
+        font-size: 40px !important;
+        padding: 0 20px;
+    }
+    .timeline {
+        width: 100% !important;
+        padding-bottom: 0;
+    }
+    .timeline:before {
+        left: 20px !important;
+    }
+    .timeline li:nth-child(odd),
+    .timeline li:nth-child(even) {
+        width: 100% !important;
+        text-align: left !important;
+        padding-left: 50px !important;
+    }
+    .timeline li:nth-child(odd):before,
+    .timeline li:nth-child(even):before {
+        top: -18px !important;
+        left: 16px !important;
+    }
+
+    .timeline li:nth-child(odd) .time,
+    .timeline li:nth-child(even) .time {
+        top: -30px !important;
+        left: 50px !important;
+        right: inherit !important;
+    }
+
+}
