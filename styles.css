@@ -364,8 +364,8 @@ html {
     }
 
     .profile-image-container img {
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 150px;
+        max-height: 150px;
     }
 
     .banner-area {
@@ -398,7 +398,7 @@ html {
     }
 
     .text-part {
-        width: 80%;
+        width: 100%;
     }
 
     .civic-initiative-container {
@@ -487,7 +487,7 @@ html {
 
 @media screen and (min-width: 377px) and (max-width: 420px) {
     .timeline-area {
-        height: 2000px;
+        height: 1700px;
     }
 
     .banner-area {
@@ -499,7 +499,7 @@ html {
 
 @media (max-width: 376px) {
     .timeline-area {
-        height: 2100px;
+        height: 1800px;
     }
 }
 
@@ -511,6 +511,6 @@ html {
 
 @media (max-width: 321px) {
     .timeline-area {
-        height: 2400px;
+        height: 2000px;
     }
 }
