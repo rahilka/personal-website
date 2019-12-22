@@ -330,6 +330,10 @@ html {
 }
 
 @media (max-width: 952px){
+    /* nav {
+        width: 80%;
+    } */
+
     .about-me-area {
         height: 850px;
     }
@@ -346,15 +350,38 @@ html {
     nav ul li a{
         font-size: 16px;
     }
+
+    .timeline-area {
+        word-break: break-word;
+        height: 2600px;
+    }
+
+    .text-part {
+        width: 80%;
+    }
+
+    .civic-initiative-container {
+        flex-direction: column;
+    }
+
+    .civic-initiative-text {
+        width: 100%;
+    }
+
+    .civic-initiative-image {
+        padding-top: 20px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 858px){
     .checkbtn{
       display: block;
+      margin-right: 35px;
     }
     nav ul{
       position: fixed;
-      width: 100%;
+      width: 70%;
       height: 100vh;
       background: #5F6062;
       top: 80px;
