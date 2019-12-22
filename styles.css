@@ -95,7 +95,7 @@ a.active,a:hover{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    height: 700px;
+    height: 400px;
 }
 
 .about-me-area {
@@ -104,7 +104,7 @@ a.active,a:hover{
 
 .timeline-area {
     min-height: 1000px;
-    height: 1730px;
+    height: 1600px;
 }
 
 .activism-area {
@@ -123,7 +123,7 @@ h1 {
 
 p {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 35px;
 }
 
 .about-me-style {
@@ -319,6 +319,11 @@ p {
     height: 250px;
 }
 
+.timeline-area, .activism-area {
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -330,12 +335,8 @@ html {
 }
 
 @media (max-width: 952px){
-    /* nav {
-        width: 80%;
-    } */
-
     .about-me-area {
-        height: 850px;
+        height: 650px;
     }
 
     .about-me-style {
@@ -439,4 +440,29 @@ html {
         right: inherit !important;
     }
 
+}
+
+@media screen and (min-width: 377px) and (max-width: 420px) {
+    .timeline-area {
+        height: 2100px;
+    }
+}
+
+
+@media (max-width: 376px) {
+    .timeline-area {
+        height: 2300px;
+    }
+}
+
+@media (max-width: 361px) {
+    .about-me-area {
+        height: 750px;
+    }
+}
+
+@media (max-width: 321px) {
+    .timeline-area {
+        height: 2600px;
+    }
 }
