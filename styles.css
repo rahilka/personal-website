@@ -154,7 +154,7 @@ p {
 
 .timeline {
     position: relative;
-    margin: 50px auto;
+    margin: 10px auto;
     width: 1000px;
     padding: 40px 0;
     box-sizing: border-box;
@@ -254,6 +254,11 @@ p {
     padding: 0;
 }
 
+.timeline ul li p a {
+    font-weight: bold;
+    color: white;
+}
+
 .timeline ul li .time h4{
     margin: 0;
     padding: 0;
@@ -282,6 +287,18 @@ p {
     color: #fff;
     border-radius: 18px;  
     box-shadow: 0 0 0 3px rgba(95, 96, 98, 0.3); 
+}
+
+.erasmus-timeline ul li:nth-child(odd) .time {
+    right: -170px;
+}
+
+.erasmus-timeline ul li:nth-child(even) .time {
+    left: -170px;
+}
+
+.specific-time {
+    right: -230px !important;
 }
 
 .civic-initiative-container {
@@ -345,7 +362,7 @@ html {
 
 @media (max-width: 1025px) {
     .banner-area {
-        max-width: 800px;
+        max-width: 1024px;
         max-height: 1024px;
     }
 }
@@ -371,6 +388,10 @@ html {
     .banner-area {
         max-width: 800px;
         max-height: 1000px;
+    }
+
+    .erasmus-timeline h2 {
+        padding-left: 18px;
     }
 }
 
@@ -449,7 +470,6 @@ html {
 
 @media (max-width: 767px) {
     h1 {
-        text-align: center !important;
         font-size: 40px !important;
         padding: 0 20px;
     }
