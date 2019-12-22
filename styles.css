@@ -80,7 +80,6 @@ a.active,a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:0 20px;
 }
 
 .banner-area h1, .banner-area p {
@@ -108,8 +107,7 @@ a.active,a:hover{
 }
 
 .activism-area {
-    min-height: 1000px;
-    height: 1730px;
+    height: 1900px;
 }
 
 .text-part {
@@ -303,11 +301,11 @@ p {
 
 .civic-initiative-container {
     display: flex;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .civic-initiative-text {
-    width: 50%;
+    width: 60%;
 }
 
 .civic-initiative-text h3 {
@@ -316,7 +314,7 @@ p {
 }
 
 .civic-initiative-image {
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -324,8 +322,8 @@ p {
 }
 
 .civic-initiative-image img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 300px;
+    max-height: 300px;
     display: inline-block;
     margin-left: 50px;
 }
@@ -341,6 +339,7 @@ p {
 
 .civic-initiative-image label.youtube i {
     color: white;
+    font-size: 50px;
 }
 
 .activism-area h2 {
@@ -390,7 +389,7 @@ html {
         max-height: 1000px;
     }
 
-    .erasmus-timeline h2 {
+    .erasmus-timeline > h2 {
         padding-left: 18px;
     }
 }
@@ -466,6 +465,10 @@ html {
     #check:checked ~ ul{
       left: 0;
     }
+
+    .timeline-area {
+        height: 1600px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -514,6 +517,20 @@ html {
         max-width: 600px;
         max-height: 800px;
     }
+
+    .activism-area {
+        height: 2080px;
+    }
+
+    .civic-initiative-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .civic-initiative-image img, .civic-initiative-image .youtube {
+        margin: 0;
+        padding: 0 !important;
+    }
 }
 
 
@@ -521,16 +538,48 @@ html {
     .timeline-area {
         height: 1800px;
     }
+
+    .activism-area {
+        height: 2200px;
+    }
+
+    .civic-initiative-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .civic-initiative-image img, .civic-initiative-image .youtube {
+        margin: 0;
+        padding: 0 !important;
+    }
 }
 
 @media (max-width: 361px) {
     .about-me-area {
         height: 750px;
     }
+
+    .activism-area {
+        height: 2300px;
+    }
+
+    .civic-initiative-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .civic-initiative-image img, .civic-initiative-image .youtube {
+        margin: 0;
+        padding: 0 !important;
+    }
 }
 
 @media (max-width: 321px) {
     .timeline-area {
         height: 2000px;
+    }
+
+    .activism-area {
+        height: 2550px;
     }
 }
