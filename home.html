@@ -14,11 +14,11 @@
               <i class="fas fa-bars"></i>
             </label>
             <label class="logo"><a href="#home"><i class="fas fa-home"></i></a></label>
-            <ul>
-              <li><a href="#about-me">About me</a></li>
-              <li><a href="#timeline">Timeline</a></li>
-              <li><a href="#activism">Activism</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <ul id="menu">
+              <li onclick="hideMenu()"><a href="#about-me">About me</a></li>
+              <li onclick="hideMenu()"><a href="#timeline">Timeline</a></li>
+              <li onclick="hideMenu()"><a href="#activism">Activism</a></li>
+              <li onclick="hideMenu()"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="banner-area" id="home">
@@ -174,5 +174,11 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            function hideMenu() {
+                document.getElementById("check").checked = false;
+            }
+        </script>
     </body>
 </html> 
