@@ -99,7 +99,7 @@ a.active,a:hover{
 }
 
 .about-me-area {
-    height: 500px;
+    height: 350px;
 }
 
 .timeline-area {
@@ -201,6 +201,21 @@ p {
 .content p {
     font-size: 20px;
     line-height: 24px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.content h2 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 .timeline ul li:nth-child(odd):before {
@@ -332,6 +347,14 @@ html {
     .timeline {
         width: 100% !important;
     }
+
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 952px){
@@ -444,14 +467,14 @@ html {
 
 @media screen and (min-width: 377px) and (max-width: 420px) {
     .timeline-area {
-        height: 2100px;
+        height: 2000px;
     }
 }
 
 
 @media (max-width: 376px) {
     .timeline-area {
-        height: 2300px;
+        height: 2100px;
     }
 }
 
@@ -463,6 +486,6 @@ html {
 
 @media (max-width: 321px) {
     .timeline-area {
-        height: 2600px;
+        height: 2400px;
     }
 }
