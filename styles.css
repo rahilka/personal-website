@@ -332,12 +332,16 @@ p {
     display: inline-block;
 }
 
-.civic-initiative-image label.youtube {
+.youtube {
     font-size: 30px;
     padding-left: 50px;
 }
 
-.civic-initiative-image label.youtube i {
+.youtube a:hover {
+    background: none;
+}
+
+.youtube i {
     color: white;
     font-size: 50px;
 }
