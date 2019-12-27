@@ -124,7 +124,6 @@ p {
 }
 
 .about-me-style {
-    width: 85%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -430,6 +429,10 @@ html {
 
     .civic-initiative-text {
         text-align: start;
+    }
+
+    .about-me-style {
+        width: 85%;
     }
 }
 
