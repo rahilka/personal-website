@@ -413,6 +413,26 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (min-width: 2000px) {
+    .activism-area {
+        height: 1500px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .activism-area {
+        height: 1700px;
+        max-height: 2000px;
+    }
+}
+
+@media (max-width: 1799px) {
+    .activism-area {
+        height: 2500px;
+        max-height: 2500px;
+    }
+}
+
 @media (max-width: 1025px) {
     .banner-area {
         max-width: 1024px;
