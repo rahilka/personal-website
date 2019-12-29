@@ -428,8 +428,7 @@ html {
 
 @media (max-width: 1799px) {
     .activism-area {
-        height: 2500px;
-        max-height: 2500px;
+        height: 90%;
     }
 }
 
