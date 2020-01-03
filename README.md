@@ -1,5 +1,7 @@
 # personal-website
 
+## LIVE: [ljubicasimonova.com](ljubicasimonova.com)
+
 This is a personal website made for my sister. 
 
 Built with pure HTML&CSS and few JavaScript lines for the hamburger menu :)
