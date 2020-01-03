@@ -1,6 +1,6 @@
 # personal-website
 
-## LIVE: [ljubicasimonova.com](ljubicasimonova.com)
+## LIVE: [ljubicasimonova.com](https://ljubicasimonova.com)
 
 This is a personal website made for my sister. 
 
