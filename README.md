@@ -10,6 +10,8 @@ The layout is responsive but can be improved, especially on the breakpoints.
 
 ## TODO
 
-1. Add some cool css animations, maybe parallax effect
+1. Add 404 page
 
-2. Translate the content to Macedonian language
+2. Add some cool css animations, maybe parallax effect
+
+3. Translate the content to Macedonian language
