@@ -82,16 +82,17 @@ a.active,a:hover{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    height: 400px;
+    height: auto;
 }
 .about-me-area {
-    height: 380px;
+    padding: 30px 0;
+    height: auto;
 }
 .timeline-area {
-    height: 1500px;
+    height: auto;
 }
 .activism-area {
-    height: 1700px;
+    height: auto;
 }
 .text-part {
     width: 65%;
@@ -361,32 +362,9 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (min-width: 2000px) {
-    .activism-area {
-        height: 1500px;
-    }
-}
-@media (min-width: 1800px) {
-    .activism-area {
-        height: 1700px;
-        max-height: 2000px;
-    }
-}
-@media (max-width: 1799px) {
-    .activism-area {
-        height: 90%;
-    }
-}
 @media (max-width: 1025px) {
     .banner-area {
         max-width: 1024px;
-        max-height: 1024px;
-    }
-    .timeline-area {
-        height: 1850px;
-    }
-    .activism-area {
-        height: 2500px;
     }
     .civic-initiative-text {
         text-align: start;
@@ -408,16 +386,12 @@ html {
     }
     .banner-area {
         max-width: 800px;
-        max-height: 1000px;
     }
     .erasmus-timeline > h2 {
         padding-left: 18px;
     }
 }
 @media (max-width: 952px){
-    .about-me-area {
-        height: 670px;
-    }
     .about-me-style {
         flex-direction: column;
     }
@@ -430,7 +404,6 @@ html {
     }
     .timeline-area {
         word-break: break-word;
-        height: 2500px;
     }
     .text-part {
         width: 100%;
@@ -476,14 +449,6 @@ html {
     #check:checked ~ ul{
       left: 0;
     }
-    .timeline-area {
-        height: 1500px;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 956px) {
-    .activism-area {
-        height: 1900px;
-    }
 }
 @media (max-width: 767px) {
     .profile-image-container {
@@ -499,9 +464,6 @@ html {
     .timeline {
         width: 100% !important;
         padding-bottom: 0;
-    }
-    .timeline-area {
-        height: 1900px;
     }
     .timeline:before {
         left: 20px !important;
@@ -526,15 +488,8 @@ html {
     }
 }
 @media screen and (min-width: 377px) and (max-width: 420px) {
-    .timeline-area {
-        height: 1650px;
-    }
     .banner-area {
         max-width: 600px;
-        max-height: 800px;
-    }
-    .activism-area {
-        height: 2080px;
     }
     .civic-initiative-text {
         width: 90%;
@@ -546,12 +501,6 @@ html {
     }
 }
 @media (max-width: 376px) {
-    .timeline-area {
-        height: 1750px;
-    }
-    .activism-area {
-        height: 90%;
-    }
     .civic-initiative-text {
         width: 90%;
         margin: 0 auto;
@@ -562,9 +511,6 @@ html {
     }
 }
 @media (max-width: 361px) {
-    .about-me-area {
-        height: 770px;
-    }
     .civic-initiative-text {
         width: 90%;
         margin: 0 auto;
@@ -572,13 +518,5 @@ html {
     .civic-initiative-image img, .civic-initiative-image .youtube {
         margin: 0;
         padding: 0 !important;
-    }
-}
-@media (max-width: 321px) {
-    .timeline-area {
-        height: 1950px;
-    }
-    .activism-area {
-        height: 2550px;
     }
 }
