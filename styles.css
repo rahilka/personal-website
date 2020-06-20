@@ -65,7 +65,7 @@ a:hover {
   background: url(/assets/bg3.jpg) no-repeat;
   height: calc(100vh - 145px);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: center;
