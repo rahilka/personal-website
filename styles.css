@@ -511,7 +511,7 @@ html {
   border-radius: 50%;
 }
 
-.testim .cont div h2 {
+.testim .cont div h2 a {
   color: #ea830e;
   font-size: 18px;
   margin: 15px 0;
