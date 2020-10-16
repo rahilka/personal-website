@@ -12,7 +12,6 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-155057978-1"
     ></script>
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -43,7 +42,6 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   </head>
   <body>
     <nav>
@@ -201,44 +199,42 @@
       </div>
     </div>
     <div class="testimonials-area">
-      <div class="text-part" style="height: auto;">
+      <div class="text-part">
         <h1>Client testimonials</h1>
       </div>
-      <section class="testimonial text-center" style="height: 300px;">
-        <div class="container">
-            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="testimonial4_slide">
-                            <p>It was great working with Ljubica. I hired her to write three
-                              articles and each one was full of useful information to my
-                              readers. <br />
-                              Thanks for the hard work!</p>
-                            <h4><a href="https://www.upwork.com/o/profiles/users/~01ecb561c71e3292d2/"
-                              target="_blank"
-                              aria-label="Upwork"
-                              rel="noopener">Scott Patterson</a></h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial4_slide">
-                            <p>Ljubica wrote insightful articles on trending topics in data science, machine learning and AI for us. Her content was well optimized for search engines with keywords provided. Ljubica always delivered on time, and in alignment with expectations. 
-                            <br /> It was truly a pleasure working with her!</p>
-                            <h4><a href="https://www.linkedin.com/in/maithili-khansaheb/" target="_blank"
-                              aria-label="Upwork"
-                              rel="noopener">Maithili Khansaheb</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+      <section id="testim" class="testim">
+        <div class="wrap">
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+          <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+            <!-- <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li> -->
+          </ul>
+          <div id="testim-content" class="cont">
+            <div class="active">
+              <h2>
+                <a
+                  href="https://www.upwork.com/o/profiles/users/~01ecb561c71e3292d2/"
+                  target="_blank"
+                  aria-label="Upwork"
+                  rel="noopener"
+                  >Scott Patterson</a
+                >
+              </h2>
+              <p>
+                It was great working with Ljubica. I hired her to write three
+                articles and each one was full of useful information to my
+                readers. <br />
+                Thanks for the hard work!
+              </p>
             </div>
+          </div>
         </div>
       </section>
+      <!-- <script src="https://use.fontawesome.com/1744f3f671.js"></script> -->
     </div>
     <div class="activism-area" id="activism">
       <div class="text-part">
@@ -430,6 +426,116 @@
             backSpeed: 30,
           });
         }
+      });
+
+      // // vars
+      // 'use strict'
+      // var	testim = document.getElementById("testim"),
+      // 		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+      //     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+      //     testimLeftArrow = document.getElementById("left-arrow"),
+      //     testimRightArrow = document.getElementById("right-arrow"),
+      //     testimSpeed = 4500,
+      //     currentSlide = 0,
+      //     currentActive = 0,
+      //     testimTimer,
+      // 		touchStartPos,
+      // 		touchEndPos,
+      // 		touchPosDiff,
+      // 		ignoreTouch = 30;
+      // ;
+
+      // window.onload = function() {
+
+      //     // Testim Script
+      //     function playSlide(slide) {
+      //         for (var k = 0; k < testimDots.length; k++) {
+      //             testimContent[k].classList.remove("active");
+      //             testimContent[k].classList.remove("inactive");
+      //             testimDots[k].classList.remove("active");
+      //         }
+
+      //         if (slide < 0) {
+      //             slide = currentSlide = testimContent.length-1;
+      //         }
+
+      //         if (slide > testimContent.length - 1) {
+      //             slide = currentSlide = 0;
+      //         }
+
+      //         if (currentActive != currentSlide) {
+      //             testimContent[currentActive].classList.add("inactive");
+      //         }
+      //         testimContent[slide].classList.add("active");
+      //         testimDots[slide].classList.add("active");
+
+      //         currentActive = currentSlide;
+
+      //         clearTimeout(testimTimer);
+      //         testimTimer = setTimeout(function() {
+      //             playSlide(currentSlide += 1);
+      //         }, testimSpeed)
+      //     }
+
+      //     testimLeftArrow.addEventListener("click", function() {
+      //         playSlide(currentSlide -= 1);
+      //     })
+
+      //     testimRightArrow.addEventListener("click", function() {
+      //         playSlide(currentSlide += 1);
+      //     })
+
+      //     for (var l = 0; l < testimDots.length; l++) {
+      //         testimDots[l].addEventListener("click", function() {
+      //             playSlide(currentSlide = testimDots.indexOf(this));
+      //         })
+      //     }
+
+      //     playSlide(currentSlide);
+
+      //     // keyboard shortcuts
+      //     document.addEventListener("keyup", function(e) {
+      //         switch (e.keyCode) {
+      //             case 37:
+      //                 testimLeftArrow.click();
+      //                 break;
+
+      //             case 39:
+      //                 testimRightArrow.click();
+      //                 break;
+
+      //             case 39:
+      //                 testimRightArrow.click();
+      //                 break;
+
+      //             default:
+      //                 break;
+      //         }
+      //     })
+
+      // 		testim.addEventListener("touchstart", function(e) {
+      // 				touchStartPos = e.changedTouches[0].clientX;
+      // 		})
+
+      // 		testim.addEventListener("touchend", function(e) {
+      // 				touchEndPos = e.changedTouches[0].clientX;
+
+      // 				touchPosDiff = touchStartPos - touchEndPos;
+
+      // 				console.log(touchPosDiff);
+      // 				console.log(touchStartPos);
+      // 				console.log(touchEndPos);
+
+      // 				if (touchPosDiff > 0 + ignoreTouch) {
+      // 						testimLeftArrow.click();
+      // 				} else if (touchPosDiff < 0 - ignoreTouch) {
+      // 						testimRightArrow.click();
+      // 				} else {
+      // 					return;
+      // 				}
+
+      // 		})
+      // }
     </script>
   </body>
 </html>
