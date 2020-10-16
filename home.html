@@ -208,7 +208,7 @@
           <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
           <ul id="testim-dots" class="dots">
             <li class="dot active"></li>
-            <!-- <li class="dot"></li>
+            <li class="dot"></li><!-- 
             <li class="dot"></li>
             <li class="dot"></li>
             <li class="dot"></li> -->
@@ -217,7 +217,7 @@
             <div class="active">
               <h2>
                 <a
-                  href="https://www.upwork.com/o/profiles/users/~01ecb561c71e3292d2/"
+                  href="https://www.upwork.com/o/profiles/users/~01ecb561c71e3292d2/" 
                   target="_blank"
                   aria-label="Upwork"
                   rel="noopener"
@@ -230,6 +230,22 @@
                 readers. <br />
                 Thanks for the hard work!
               </p>
+            </div>
+            <div>
+              <h2>
+                <a
+                  href="https://www.linkedin.com/in/maithili-khansaheb/"
+                  target="_blank"
+                  aria-label="LinkedIn Profile"
+                  rel="noopener"
+                  >Maithili Khansaheb</a
+                >
+              </h2>
+              <p>Ljubica wrote insightful articles on trending topics in data science, machine learning and AI for us. 
+                Her content was well optimized for search engines with keywords provided. 
+                Ljubica always delivered on time, and in alignment with expectations. <br /> 
+                It was truly a pleasure working with her!
+              </p>                    
             </div>
           </div>
         </div>
@@ -414,6 +430,52 @@
         document.getElementById("check").checked = false;
       }
 
+      var	testim = document.getElementById("testim"),
+        testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+        testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+        testimLeftArrow = document.getElementById("left-arrow"),
+        testimRightArrow = document.getElementById("right-arrow"),
+        testimSpeed = 4500,
+        currentSlide = 0,
+        currentActive = 0,
+        testimTimer,
+        touchStartPos,
+        touchEndPos,
+        touchPosDiff,
+        ignoreTouch = 30;
+
+      function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+        currentActive = currentSlide;
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function() {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+      }
+
+      testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+      });
+
+      testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+      })
+
       $(window).on("load", function () {
         /*--/ Star Typed /--*/
         if ($(".text-slider").length == 1) {
@@ -426,72 +488,19 @@
             backSpeed: 30,
           });
         }
-      });
 
-      // // vars
-      // 'use strict'
-      // var	testim = document.getElementById("testim"),
-      // 		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
-      //     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
-      //     testimLeftArrow = document.getElementById("left-arrow"),
-      //     testimRightArrow = document.getElementById("right-arrow"),
-      //     testimSpeed = 4500,
-      //     currentSlide = 0,
-      //     currentActive = 0,
-      //     testimTimer,
-      // 		touchStartPos,
-      // 		touchEndPos,
-      // 		touchPosDiff,
-      // 		ignoreTouch = 30;
-      // ;
+        for (var l = 0; l < testimDots.length; l++) {
+          testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+          })
+        }
+
+        playSlide(currentSlide);
+        
+      });
 
       // window.onload = function() {
 
-      //     // Testim Script
-      //     function playSlide(slide) {
-      //         for (var k = 0; k < testimDots.length; k++) {
-      //             testimContent[k].classList.remove("active");
-      //             testimContent[k].classList.remove("inactive");
-      //             testimDots[k].classList.remove("active");
-      //         }
-
-      //         if (slide < 0) {
-      //             slide = currentSlide = testimContent.length-1;
-      //         }
-
-      //         if (slide > testimContent.length - 1) {
-      //             slide = currentSlide = 0;
-      //         }
-
-      //         if (currentActive != currentSlide) {
-      //             testimContent[currentActive].classList.add("inactive");
-      //         }
-      //         testimContent[slide].classList.add("active");
-      //         testimDots[slide].classList.add("active");
-
-      //         currentActive = currentSlide;
-
-      //         clearTimeout(testimTimer);
-      //         testimTimer = setTimeout(function() {
-      //             playSlide(currentSlide += 1);
-      //         }, testimSpeed)
-      //     }
-
-      //     testimLeftArrow.addEventListener("click", function() {
-      //         playSlide(currentSlide -= 1);
-      //     })
-
-      //     testimRightArrow.addEventListener("click", function() {
-      //         playSlide(currentSlide += 1);
-      //     })
-
-      //     for (var l = 0; l < testimDots.length; l++) {
-      //         testimDots[l].addEventListener("click", function() {
-      //             playSlide(currentSlide = testimDots.indexOf(this));
-      //         })
-      //     }
-
-      //     playSlide(currentSlide);
 
       //     // keyboard shortcuts
       //     document.addEventListener("keyup", function(e) {
