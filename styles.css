@@ -505,7 +505,8 @@ html {
 }
 
 .testim .cont > div.inactive {
-  opacity: 1;
+  /* opacity: 1; */
+  display: none;
 }
 
 .testim .cont > div.active {
