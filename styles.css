@@ -62,19 +62,22 @@ a:hover {
   display: none;
 }
 .banner-area {
-  background: url(/assets/bg3.jpg) no-repeat;
-  height: calc(100vh - 145px);
+  background: url(./assets/bg3.jpg) no-repeat;
+  height: 100vh;
+  background-position: center;
+  justify-content: start;
   background-size: cover;
-  background-position: top;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
 .banner-area h1,
 .banner-area p {
-  color: 28262c;
+  color: white;
+}
+.fullName {
+  margin-top: 15%;
 }
 .banner-area h1:first-child {
   margin-top: 10%;
@@ -128,9 +131,10 @@ p {
   margin-right: 35px;
 }
 .profile-image-container img {
-  max-width: 200px;
-  max-height: 200px;
+  /* max-width: 200px; */
+  /* max-height: 200px; */
   border-radius: 50%;
+  object-fit: cover;
 }
 .activism-area,
 .timeline-area {
@@ -965,6 +969,9 @@ html {
   body {
     font-size: 14px;
   }
+  .fullName {
+    margin-top: 75% !important;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -1068,6 +1075,9 @@ html {
   .text-part h1 {
     padding-left: 20px;
   }
+  .fullName {
+    margin-top: 45% !important;
+  }
 }
 @media (max-width: 767px) {
   .profile-image-container {
@@ -1108,6 +1118,9 @@ html {
     left: 50px !important;
     right: inherit !important;
   }
+  .fullName {
+    margin-top: 30% !important;
+  }
 }
 @media screen and (min-width: 377px) and (max-width: 420px) {
   .banner-area {
@@ -1122,6 +1135,9 @@ html {
     margin: 0;
     padding: 0 !important;
   }
+  .fullName {
+    margin-top: 60% !important;
+  }
 }
 @media (max-width: 376px) {
   .civic-initiative-text {
@@ -1132,6 +1148,9 @@ html {
   .civic-initiative-image .youtube {
     margin: 0;
     padding: 0 !important;
+  }
+  .fullName {
+    margin-top: 60% !important;
   }
 }
 @media (max-width: 361px) {
