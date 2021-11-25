@@ -373,7 +373,7 @@ p {
 	z-index: -1;
 }
 #storytelling {
-	background-image: url(./img/image-2.jpeg);
+	background-image: url(./img/image-2.jpg);
 	background-size: cover;
 }
 #strategy {
@@ -381,11 +381,11 @@ p {
 	background-size: cover;
 }
 #copywriting {
-	background-image: url(./img/image-1.jpeg);
+	background-image: url(./img/image-1.jpg);
 	background-size: cover;
 }
 #seo {
-	background-image: url(./img/image-4.jpeg);
+	background-image: url(./img/image-4.jpg);
 	background-size: cover;
 }
 #services .service-bottom .icon {
