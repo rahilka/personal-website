@@ -27,7 +27,7 @@ menu_item.forEach((item) => {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["a Copywriter", "a Creative Content Creator", "an SEO Content Writer", "a #1 Sopranos’ fan"];
+const textArray = ["a Copywriter", "an SEO Content Specialist", "Sopranos' #1 fan"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
