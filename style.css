@@ -207,7 +207,8 @@ p {
 #hero {
 	background-image: url(./img/bigger-down.jpg);
 	background-size: cover;
-	background-position: center;
+	/* background-position: center; */
+	background-position: 0px -75px;
 	position: relative;
 	z-index: 1;
 }
@@ -287,6 +288,7 @@ p {
 	overflow: hidden;
 	color: white;
 	line-height: 1 !important;
+	margin-top: 25%;
   }
   .hero-container p span.typed-text {
 	font-weight: normal;
@@ -323,8 +325,10 @@ p {
 } 
 
 #reviews {
-	background: linear-gradient(rgba(200,173,127,0.7),rgba(200,173,127,1)), url('./img/dada.jpg');
+	background: linear-gradient(90deg, rgba(200,173,127,1) 0%, rgba(200,173,127,0.5525560566023284) 55%, rgba(200,173,127,0.8186624991793592) 71%), url('./img/dada.jpg');
+	/* background: rgb(200,173,127); */
 	background-size: cover;
+	background-position: 50% 5%;
 }
 
 #services .services {
@@ -634,9 +638,9 @@ p {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	/* padding: 100px 0; */
 	min-height: 0 !important;
     padding-top: 60px;
+	margin-right: 50%;
 }
 .reviews-container {
 	display: flex;
@@ -805,6 +809,8 @@ p {
 #about .col-left {
 	width: 250px;
 	height: 360px;
+	display: flex;
+    align-items: center;
 }
 #about .col-right {
 	width: 100%;
