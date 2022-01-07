@@ -1277,6 +1277,7 @@ p {
 	#reviews {
 		height: auto;
 		min-height: 100vh;
+		background-position: right;
 	}
 	.civic-initiative-text {
 		text-align: center;
