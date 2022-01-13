@@ -204,8 +204,13 @@ p {
 /* End Header section */
 
 /* Hero Section */
-#hero {
+.webp #hero {
+	background-image: url(./img/bigger-down.webp);
+}
+.no-webp #hero{
 	background-image: url(./img/bigger-down.jpg);
+}
+#hero {
 	background-size: cover;
 	background-position: 0px -75px;
 	position: relative;
@@ -313,19 +318,26 @@ p {
   
 
 /* Services Section */
-/* activism, */
 #services, #contact {	
 	background: linear-gradient(270deg, rgba(200,173,127,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
 }
- 
-#activism {
+
+.webp #activism {
+	background-image: url(./img/test5.webp);
+	background-size: contain;
+}
+.no-webp #activism{
 	background-image: url(./img/test5.jpg);
 	background-size: contain;
-} 
+}
 
-#reviews {
+.webp #reviews {
+	background: linear-gradient(90deg, rgba(200,173,127,1) 0%, rgba(200,173,127,0.5525560566023284) 55%, rgba(200,173,127,0.8186624991793592) 71%), url('./img/dada.webp');
+	background-size: cover;
+	background-position: 50% 5%;
+}
+.no-webp #reviews {
 	background: linear-gradient(90deg, rgba(200,173,127,1) 0%, rgba(200,173,127,0.5525560566023284) 55%, rgba(200,173,127,0.8186624991793592) 71%), url('./img/dada.jpg');
-	/* background: rgb(200,173,127); */
 	background-size: cover;
 	background-position: 50% 5%;
 }
@@ -375,19 +387,35 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#storytelling {
+.webp #storytelling {
+	background-image: url(./img/image-2.webp);
+	background-size: cover;
+}
+.no-webp #storytelling{
 	background-image: url(./img/image-2.jpg);
 	background-size: cover;
 }
-#strategy {
+.webp #strategy {
+	background-image: url(./img/image-3.webp);
+	background-size: cover;
+}
+.no-webp #strategy{
 	background-image: url(./img/image-3.jpeg);
 	background-size: cover;
 }
-#copywriting {
+.webp #copywriting {
+	background-image: url(./img/image-1.webp);
+	background-size: cover;
+}
+.no-webp #copywriting{
 	background-image: url(./img/image-1.jpg);
 	background-size: cover;
 }
-#seo {
+.webp #seo {
+	background-image: url(./img/image-4.webp);
+	background-size: cover;
+}
+.no-webp #seo{
 	background-image: url(./img/image-4.jpg);
 	background-size: cover;
 }
@@ -433,10 +461,13 @@ p {
 	background: linear-gradient(90deg, rgba(200,173,127,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
 }
 
-#projects {
+.webp #projects {
+	background-image: url(./img/test4.webp);
+	background-size: contain;
+}
+.no-webp #projects{
 	background-image: url(./img/test4.jpg);
 	background-size: contain;
-	/* background-position: center; */
 }
 
 #projects .projects, #activism .projects {
